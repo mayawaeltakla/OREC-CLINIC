@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-label="OREC contact art — map of care">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf8f2"/>
+      <stop offset="1" stop-color="#e8ddcc"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <ellipse cx="720" cy="200" rx="300" ry="220" fill="#d8bc8a" opacity=".22" filter="url(#blur)"/>
+  <g stroke="#0e3557" opacity=".1">
+    <path d="M0 100h1000M0 200h1000M0 300h1000M0 400h1000M0 500h1000M0 600h1000M0 700h1000"/>
+    <path d="M100 0v800M200 0v800M300 0v800M400 0v800M500 0v800M600 0v800M700 0v800M800 0v800M900 0v800"/>
+  </g>
+  <path d="M0 640C180 560 300 640 420 540S700 400 1000 480" fill="none" stroke="#0e3557" stroke-width="1.2" opacity=".25"/>
+  <path d="M0 700C200 620 340 690 470 590S760 460 1000 540" fill="none" stroke="#b9914f" stroke-width="1" opacity=".5"/>
+  <g fill="none" stroke="#0e3557" opacity=".35">
+    <path d="M360 620V400c0-77 63-140 140-140s140 63 140 140v220" stroke-width="1.6"/>
+    <path d="M410 620V430c0-50 40-90 90-90s90 40 90 90v190" stroke-width="1.2"/>
+  </g>
+  <circle cx="500" cy="430" r="12" fill="#0e3557"/>
+  <circle cx="500" cy="430" r="26" fill="none" stroke="#b9914f" stroke-width="1"/>
+  <path d="M500 400v-60" stroke="#b9914f" stroke-width="1" opacity=".7"/>
+  <g fill="#b9914f">
+    <circle cx="160" cy="200" r="2.5"/>
+    <circle cx="840" cy="640" r="2.5"/>
+  </g>
+  <text x="500" y="700" text-anchor="middle" font-family="Chapaza, Georgia, serif" font-style="normal" font-size="24" fill="#0e3557" opacity=".55" letter-spacing="1">ISTANBUL · TÜRKİYE</text>
+  <path d="M0 0h1000v800H0z" filter="url(#grain)" opacity=".08"/>
+</svg>

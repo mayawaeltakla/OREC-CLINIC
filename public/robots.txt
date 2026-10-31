@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# أضف رابط خريطة الموقع بعد اعتماد النطاق الرسمي:
+# Sitemap: https://example.com/sitemap.xml

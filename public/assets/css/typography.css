@@ -1,0 +1,563 @@
+/* ==========================================================================
+   OREC CLINIC — Mira Clinic typography system
+   Arabic: Markazi Text 300 / 500 / 700
+   English display: Chapaza 500 / 700
+   English text, nav and buttons: Gilroy 300 / 700
+   Sizes and spacing follow the reference's rendered values as closely as
+   the existing OREC layout allows. Layout, colours and imagery are untouched.
+   ========================================================================== */
+
+:root {
+  --font-ar: "Markazi Text", Tahoma, Georgia, serif;
+  --font-body: "Markazi Text", "Segoe UI", Tahoma, sans-serif;
+  --font-display: "Chapaza", "Markazi Text", Georgia, serif;
+  --font-en: "Gilroy", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Arabic base ---------- */
+
+body {
+  font-family: var(--font-ar);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .display {
+  font-family: var(--font-ar);
+  letter-spacing: normal;
+}
+
+h1 {
+  font-size: clamp(2.125rem, 1.375rem + 1.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+h2 {
+  font-size: clamp(1.8875rem, 1.5rem + 0.8vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+h3 {
+  font-size: clamp(1.6rem, 1.3rem + 0.6vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+strong, b { font-weight: 700; }
+
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.small { font-size: 0.9rem; line-height: 1.5; }
+.tiny { font-size: 0.8rem; line-height: 1.5; }
+
+/* ---------- English display and labels ---------- */
+
+.latin,
+.en-label,
+.kicker,
+.hero__latin,
+.footer__wordmark,
+.signature__mark {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.eyebrow {
+  font-family: var(--font-en);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.hero__vertical,
+.marquee__group,
+.cta-band__seal,
+.topbar__lang {
+  font-family: var(--font-en);
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.hero__vertical { font-size: 0.8rem; line-height: 1.5; }
+.marquee__group { font-size: 0.9rem; line-height: 1.5; }
+.cta-band__seal { font-size: 0.6rem; line-height: 1.5; }
+.topbar__lang { font-size: 0.8rem; line-height: 1.5; text-transform: uppercase; }
+
+/* Numbers use the Arabic text face, as in the reference counters. */
+.num,
+.step__num,
+.service-row__num,
+.acc__summary .num,
+.svc-feature__no,
+.block__no,
+.value__num,
+.signature-list .num,
+.cat-hero__stamp .num,
+.about-preview__badge .num,
+.hero__stamp .num,
+.stat .num,
+.choose-item .num,
+.care-step .num,
+.service-hero__badge .num,
+.cta-band__seal .num {
+  font-family: var(--font-ar);
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+/* ---------- Top bar, navigation, buttons ---------- */
+
+.topbar {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.nav__link {
+  font-family: var(--font-ar);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.header__phone {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.btn {
+  font-family: var(--font-ar);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.btn--sm { font-size: 1rem; }
+
+.link-arrow {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.floating {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ---------- Mega menu and mobile drawer ---------- */
+
+.mega__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.mega__link {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.mega__all {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.mega__feature h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.mega__feature p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.mega__feature .eyebrow { font-size: 0.8rem; }
+
+.drawer__link,
+.drawer__group > button {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.drawer__link span {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: normal;
+}
+.drawer__sub a {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.drawer__sub .en-label { font-size: 0.8rem; }
+.drawer__meta { font-size: 0.9rem; font-weight: 300; line-height: 1.5; }
+
+/* ---------- Footer ---------- */
+
+.footer__title {
+  font-family: var(--font-ar);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 18px;
+}
+.footer__list {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.footer__contact {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.footer__contact dt {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+.footer__brand p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.footer__bottom {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.footer__pending { font-size: 0.8rem; }
+.footer__wordmark { font-size: 1.5rem; line-height: 1.2; }
+
+/* ---------- Home hero and page heroes ---------- */
+
+.hero__title {
+  font-size: clamp(2.125rem, 1.375rem + 1.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.hero__latin {
+  font-family: var(--font-en);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.hero__lead {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.hero__note {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.hero__meta {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.hero__stamp p { font-size: 0.8rem; line-height: 1.5; }
+.hero__stamp .num { font-size: 2rem; }
+.hero__stamp .en-label { font-size: 0.9rem; }
+
+.specialty-rail__item strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.specialty-rail__item small {
+  font-family: var(--font-en);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+}
+.specialty-rail__item .num { font-size: 1rem; }
+
+.page-hero h1,
+.cat-hero h1,
+.service-hero__copy h1 {
+  font-size: clamp(2.125rem, 1.375rem + 1.5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.section-head__title h2,
+.cta-band__copy h2,
+.block__head h2 {
+  font-size: clamp(1.8875rem, 1.5rem + 0.8vw, 2rem);
+  line-height: 1.2;
+}
+
+/* ---------- Section and card headings ---------- */
+
+.spec__body h3,
+.service-row h3,
+.svc-feature__body h3,
+.group-block__head h3,
+.related-card h3,
+.card h3,
+.value h3,
+.step h3,
+.choose-item h3,
+.care-step h3,
+.acc__summary h3,
+.timeline__item h3,
+.notice h3,
+.contact-card h3,
+.channel h3,
+.map-plate h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.spec--dental .spec__body h3 { font-size: 1.6rem; }
+.spec--hair .spec__body h3,
+.spec--bariatric .spec__body h3 { font-size: 1.25rem; }
+.service-row h3,
+.group-block__head h3 { font-size: 1.6rem; }
+
+.founder__quote {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.philosophy__statement {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.quote-block p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.why__quote p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* ---------- Body copy ---------- */
+
+.prose > p,
+.block__text p,
+.about-intro__body p,
+.philosophy__body p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.acc__body p,
+.acc__body li,
+.service-row p,
+.svc-feature__body p,
+.group-block__head p,
+.card p,
+.timeline__item p,
+.notice p,
+.notice li,
+.channel p,
+.contact-card p,
+.map-plate p,
+.step p,
+.value p,
+.care-step p,
+.spec__body p,
+.choose-item p,
+.contact-notice p,
+.intimate-note p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.block__head p,
+.services-note p,
+.cta-band__copy p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.block__text li { font-size: 0.95rem; line-height: 1.5; }
+
+/* ---------- Small labels and meta ---------- */
+
+.crumbs,
+.page-hero__meta,
+.cat-hero__meta {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.cat-hero__stamp span,
+.service-hero__badge,
+.fact span,
+.about-fact span,
+.toc__title,
+.field label,
+.footer__contact dt,
+.contact-card dt {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.fact strong,
+.about-fact strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.toc__link {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.toc__back { font-size: 0.85rem; font-weight: 300; }
+
+.cat-nav a {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.service-row__count,
+.spec__list a,
+.signature span,
+.signature-list span,
+.journey__foot,
+.related-card .link-arrow,
+.quote-block cite {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.signature strong,
+.signature-list strong,
+.founder__cite strong {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.founder__cite span { font-size: 0.8rem; line-height: 1.5; }
+.founder__cite .en-label { font-size: 0.9rem; }
+.founder__mark {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.founder__mark span {
+  font-family: var(--font-en);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+}
+.choose-item .en-label { font-size: 0.85rem; }
+.care-step p { font-size: 0.9rem; }
+
+.cta-band__seal .num { font-size: 1.1rem; }
+.service-hero__badge .num { font-size: 1.5rem; }
+.cat-hero__stamp .num { font-size: 2rem; }
+.about-preview__badge .num { font-size: 2.4rem; }
+.stat .num { font-size: 2.5rem; line-height: 1; }
+.stat span { font-size: 0.8rem; line-height: 1.5; letter-spacing: normal; }
+.about-preview__badge span { font-size: 0.8rem; line-height: 1.5; letter-spacing: normal; }
+.hero__stamp .num { line-height: 1; }
+
+.block__no {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.card__no { font-size: 0.85rem; letter-spacing: normal; }
+.timeline__date { font-size: 0.85rem; letter-spacing: normal; }
+
+.channel__value { font-size: 0.9rem; line-height: 1.5; }
+.hours-list div { font-size: 0.85rem; line-height: 1.5; }
+.contact-card dd { font-size: 0.9rem; line-height: 1.5; }
+
+.consent,
+.form__note {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* ---------- Mobile balance ---------- */
+
+@media (max-width: 720px) {
+  h1,
+  .hero__title,
+  .page-hero h1,
+  .cat-hero h1,
+  .service-hero__copy h1 {
+    font-size: 1.75rem;
+  }
+  h2,
+  .section-head__title h2,
+  .cta-band__copy h2,
+  .block__head h2 {
+    font-size: 1.6rem;
+  }
+  h3,
+  .service-row h3,
+  .group-block__head h3,
+  .spec--dental .spec__body h3 {
+    font-size: 1.35rem;
+  }
+  .footer__title { font-size: 1.15rem; }
+}

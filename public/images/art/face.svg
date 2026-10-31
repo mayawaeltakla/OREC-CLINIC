@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="OREC facial aesthetics art — contour study">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4efe5"/>
+      <stop offset="1" stop-color="#dccdb9"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e5b8f" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#0e3557" stop-opacity=".55"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="620" cy="430" rx="300" ry="360" fill="url(#ink)" filter="url(#blur)" opacity=".65"/>
+  <ellipse cx="280" cy="760" rx="260" ry="220" fill="#d8bc8a" opacity=".28" filter="url(#blur)"/>
+  <g fill="none" stroke="#0e3557" opacity=".42">
+    <ellipse cx="450" cy="500" rx="220" ry="300" transform="rotate(-12 450 500)"/>
+    <ellipse cx="450" cy="500" rx="184" ry="258" transform="rotate(-12 450 500)"/>
+    <ellipse cx="450" cy="500" rx="146" ry="214" transform="rotate(-12 450 500)"/>
+    <ellipse cx="450" cy="500" rx="106" ry="168" transform="rotate(-12 450 500)"/>
+  </g>
+  <g fill="none" stroke="#fbf8f2" opacity=".55">
+    <path d="M300 300c90 40 120 120 80 200s-20 160 60 210"/>
+    <path d="M340 270c100 50 130 140 84 226s-12 168 76 220"/>
+  </g>
+  <path d="M450 120v860" stroke="#b9914f" stroke-width="1" opacity=".55"/>
+  <path d="M330 260l5 15 15 5-15 5-5 15-5-15-15-5 15-5z" fill="#b9914f" opacity=".9"/>
+  <text x="450" y="1010" text-anchor="middle" font-family="Chapaza, Georgia, serif" font-style="normal" font-size="24" fill="#0e3557" opacity=".55" letter-spacing="1">FACE · CONTOUR</text>
+  <path d="M0 0h900v1100H0z" filter="url(#grain)" opacity=".09"/>
+</svg>

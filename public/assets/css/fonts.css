@@ -1,0 +1,43 @@
+/* ==========================================================================
+   OREC CLINIC — Font faces
+   Matched to the fonts actually rendered by the Mira Clinic reference:
+   - Markazi Text (Arabic text and headings)
+   - Chapaza (English display / headings)
+   - Gilroy Light + Bold (English body, navigation and buttons)
+   ========================================================================== */
+
+@font-face {
+  font-family: "Markazi Text";
+  src: url("https://www.mira-clinic.net/assets/fonts/MarkaziText-VariableFont_wght.woff2") format("woff2"),
+       local("Markazi Text");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chapaza";
+  src: url("https://www.mira-clinic.net/assets/fonts/Chapaza.woff2") format("woff2"),
+       local("Chapaza");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://www.mira-clinic.net/assets/fonts/Gilroy-Light.woff2") format("woff2"),
+       local("Gilroy Light");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://www.mira-clinic.net/assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+       local("Gilroy Bold");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

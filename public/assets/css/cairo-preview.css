@@ -1,0 +1,24 @@
+/* ==========================================================================
+   OREC CLINIC — Cairo typography
+   Shared site-wide layer. Loaded after main.css on every HTML page.
+   Fonts: Cairo 400 / 500 / 600 / 700 / 800 (Google Fonts, temporary).
+   Only the typeface is changed; colours, layout, sizes, spacing and imagery
+   remain governed by the existing OREC stylesheets.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --font-ar: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  --font-body: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  --font-display: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  --font-en: "Cairo", "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Cairo is the only family in this preview, for Arabic and English alike. */
+html body,
+html body *,
+html body *::before,
+html body *::after {
+  font-family: "Cairo", "Segoe UI", Tahoma, sans-serif !important;
+}

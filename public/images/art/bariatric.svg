@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="OREC bariatric art — balance and renewal">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf8f2"/>
+      <stop offset="1" stop-color="#e7dbc9"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e5b8f"/>
+      <stop offset="1" stop-color="#0e3557"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="620" cy="760" rx="320" ry="280" fill="#b9914f" opacity=".22" filter="url(#blur)"/>
+  <ellipse cx="260" cy="300" rx="240" ry="220" fill="#d8bc8a" opacity=".28" filter="url(#blur)"/>
+  <g fill="none" stroke="url(#ring)">
+    <ellipse cx="450" cy="540" rx="300" ry="180" stroke-width="2" opacity=".9"/>
+    <ellipse cx="450" cy="540" rx="236" ry="138" stroke-width="1.4" opacity=".6"/>
+    <ellipse cx="450" cy="540" rx="172" ry="98" stroke-width="1" opacity=".42"/>
+    <ellipse cx="450" cy="540" rx="108" ry="60" stroke-width="1" opacity=".3"/>
+  </g>
+  <path d="M60 540h780" stroke="#b9914f" stroke-width="1" opacity=".6"/>
+  <circle cx="450" cy="540" r="26" fill="#0e3557"/>
+  <circle cx="450" cy="540" r="7" fill="#d8bc8a"/>
+  <path d="M450 170v110M450 800v110" stroke="#0e3557" stroke-width="1" opacity=".35"/>
+  <text x="450" y="1010" text-anchor="middle" font-family="Chapaza, Georgia, serif" font-style="normal" font-size="24" fill="#0e3557" opacity=".55" letter-spacing="1">BALANCE · RENEW</text>
+  <path d="M0 0h900v1100H0z" filter="url(#grain)" opacity=".08"/>
+</svg>
